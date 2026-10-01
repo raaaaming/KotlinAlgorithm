@@ -23,7 +23,7 @@ string solution(string nickname) {
         }
     }
     if(answer.size() < 3){
-        for(int i=0; answer.size() < 4; i++) { answer += "o"; }
+        while(answer.size() < 4) { answer += "o"; }
     }
     if(answer.size() > 8){
         answer = answer.substr(0,8);
